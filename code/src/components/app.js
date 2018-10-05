@@ -26,7 +26,8 @@ class App extends React.Component {
                <Station
                  image={item.image}
                  name={item.name}
-                 backgroundcolor={item.color}
+                 tagline={item.tagline}
+                 backgroundColor={item.color}
                  audio={item.liveaudio.url} />
              )
            })}

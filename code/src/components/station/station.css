@@ -10,8 +10,8 @@
   display: flex;
   justify-content: center;
   flex-direction: row;
-  width: 500px;
-  height: 200px;
+  width: 550px;
+  height: 240px;
   padding: 10px;
   border: 1px solid black;
 }
@@ -23,6 +23,7 @@
   width: auto;
   height: auto;
   overflow: hidden;
+  padding-right: 10px;
 }
 
 .Image-container img {
@@ -31,8 +32,20 @@
 
 .Audio-container {
   display: flex;
-  justify-content: center;
   flex-direction: column;
   width: 60%;
-  padding: 10px;
+  background-color: white;
+  padding: 5px;
+  opacity: 0.9;
+  border: 1px solid black;
 }
+
+/* .Channel-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.Player {
+  display: flex;
+  flex-direction: column;
+} */
