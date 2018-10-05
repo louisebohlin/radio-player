@@ -1,7 +1,6 @@
 import React from "react"
 import Station from "./station/station.js"
 
-
 class App extends React.Component {
 
    state = {
@@ -19,12 +18,23 @@ class App extends React.Component {
    }
 
    render() {
-
-     return (
-       <div className="App">
-         <Station />
-       </div>
-     )
+     if (this.state.stationItems.length > 0) {
+       return (
+         <div>
+           {this.state.stationItems.map((item) => {
+             return (
+               <Station
+                 image={item.image}
+                 name={item.name}
+                 backgroundcolor={item.color}
+                 audio={item.liveaudio.url} />
+             )
+           })}
+         </div>
+       )
+     } else {
+       return <div>Loading...</div>
+     }
    }
 
 }
